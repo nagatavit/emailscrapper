@@ -11,7 +11,7 @@ SPECIAL [_\.-]
 %%
 
 
-{ALFANUM}+[{ALFANUM}{SPECIAL}]*{ALFANUM}+@{ALFANUM}+([.]{ALFANUM}+)* { printf("%s\n", yytext); }
+{ALFANUM}+[a-zA-Z0-9_\.-]*{ALFANUM}+@{ALFANUM}+([.]{ALFANUM}+)* { printf("%s\n", yytext); }
 
 [ \t\r\n] ;
 [[:space:]] ;
